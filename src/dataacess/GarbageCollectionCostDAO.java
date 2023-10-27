@@ -78,7 +78,7 @@ public class GarbageCollectionCostDAO {
         list.add(3277);*/
         while(true) {      
             getGarbage(lt);
-            float a = calculator(lt);
+            String a = Float.toString(calculator(lt)) ;
             System.out.println("The total cost: " + a +"VND");
             if(!l.checkInputYN("Do you want to continue(Y/N)?: "))
                 return;
