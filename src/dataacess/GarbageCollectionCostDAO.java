@@ -80,6 +80,7 @@ public class GarbageCollectionCostDAO {
             getGarbage(lt);
             String a = Float.toString(calculator(lt)) ;
             System.out.println("The total cost: " + a +"VND");
+            lt.clear();
             if(!l.checkInputYN("Do you want to continue(Y/N)?: "))
                 return;
         }    
